@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import express from 'express'
 import * as openai from './src/openai.js'
 

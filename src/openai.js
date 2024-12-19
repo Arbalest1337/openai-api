@@ -1,3 +1,4 @@
+import './loadEnv.js'
 import OpenAI from 'openai'
 
 const apiKey = process.env.OPENAI_KEY
