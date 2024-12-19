@@ -1,8 +1,10 @@
-import './loadEnv.js'
 import OpenAI from 'openai'
 
-const apiKey = process.env.OPENAI_KEY
-const openai = new OpenAI({ apiKey })
+setTimeout(() => {
+  console.log(process.env.OPENAI_KEY)
+  const apiKey = process.env.OPENAI_KEY
+  const openai = new OpenAI({ apiKey })
+}, 100)
 
 export const chatCompletions = async config => {
   const res = await openai.chat.completions.create(config)

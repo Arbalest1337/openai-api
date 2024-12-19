@@ -3,6 +3,7 @@ export const initEnv = async () => {
   if (process.env.NODE_ENV !== 'production') {
     const dotenv = await import('dotenv')
     await dotenv.config()
+    await new Promise(resolve => resolve())
     console.log('.env loaded')
   }
 }
