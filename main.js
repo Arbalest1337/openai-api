@@ -1,4 +1,3 @@
-await import('dotenv').then(dotenv => dotenv.config())
 import express from 'express'
 import * as openai from './src/openai.js'
 console.log({ env: process.env })
