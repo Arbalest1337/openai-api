@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from 'express'
-import * as openai from './openai.js'
+import * as openai from './src/openai.js'
 
 const PORT = 6657
 const app = express()
