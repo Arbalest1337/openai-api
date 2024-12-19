@@ -1,6 +1,5 @@
 import express from 'express'
 import * as openai from './src/openai.js'
-console.log({ env: process.env })
 
 const PORT = 6657
 const app = express()
